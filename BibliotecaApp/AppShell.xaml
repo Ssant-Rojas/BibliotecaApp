@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:BibliotecaApp.Views" 
+    x:Class="BibliotecaApp.AppShell">
+    <ShellContent Title="Inicio" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+    <ShellContent Title="Agregar Libro" ContentTemplate="{DataTemplate local:AgregarLibroPage}" Route="AgregarLibroPage" />
+    <ShellContent Title="Mostrar Catalogo" ContentTemplate="{DataTemplate local:MostrarCatalogoPage}" Route="MostrarCatalogoPage" />
+    <ShellContent Title="Registrar Usuario" ContentTemplate="{DataTemplate local:RegistrarUsuarioPage}" Route="RegistrarUsuarioPage" />
+</Shell>

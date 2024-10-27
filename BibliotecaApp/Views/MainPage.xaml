@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:BibliotecaApp.ViewModels"
+             x:Class="BibliotecaApp.Views.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:BibliotecaViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Label Text="Biblioteca" FontSize="Large" HorizontalOptions="Center" />
+        <Button Text="Agregar Libro" Command="{Binding AgregarLibroCommand}" />
+        <Button Text="Registrar Usuario" Command="{Binding RegistrarUsuarioCommand}" />
+        <Button Text="Prestar Libro" Command="{Binding PrestarLibroCommand}" />
+        <Button Text="Devolver Libro" Command="{Binding DevolverLibroCommand}" />
+    </StackLayout>
+</ContentPage>
